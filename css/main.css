@@ -1,6 +1,7 @@
 body {
   width: 100%;
   height: 100vh;
+  margin: 0;
 }
 
 body .container {
@@ -18,7 +19,7 @@ body .container .containerLeft {
 
 body .container .containerLeft iframe {
   width: 100%;
-  height: 100%;
+  height: 99%;
   border: 0;
 }
 
@@ -49,16 +50,22 @@ body .container .containerRight .cr-position {
           align-items: center;
 }
 
-body .container .containerRight .cr-position p {
+body .container .containerRight .cr-position .crp-paragraphe1 {
   text-align: center;
+  margin: 0;
+}
+
+body .container .containerRight .cr-position .crp-paragraphe2 {
+  text-align: center;
+  margin: 10px 0 20px 0;
 }
 
 body .container .containerRight .cr-position .button {
   width: 50%;
-  height: 25px;
   background-color: #aadaff;
   border: none;
   border-radius: 15px;
+  padding: 10px 5px;
 }
 
 body .container .containerRight .cr-position #demo {
