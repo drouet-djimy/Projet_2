@@ -1,0 +1,21 @@
+body {
+    width: 100%;
+    height: 100vh;
+    .container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        .containerLeft {
+            width: 50%;
+            height: 100%;
+            iframe {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .containerRight {
+            width: 50%;
+            height: 100%;
+        }
+    }
+}
