@@ -8,21 +8,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
   <script src="js/main.js"></script>
+  <script src="js/jQuery/node_modules/jquery/dist/jquery.min.js"></script>
 </head>
 
 <body>
   <div class="container">
     <div class="containerLeft">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10840.56135052786!2d-1.5287391999999997!3d47.2138363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1544602607614"
+      <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10840.56135052786!2d-1.5287391999999997!3d47.2138363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1544602607614"
         frameborder="0" allowfullscreen></iframe>
     </div>
 
     <div class="containerRight">
       <div class="cr-position">
         <p class="crp-paragraphe1">Pour connaitre votre position :</p>
-        <p class="crp-paragraphe2">veuillez clicker sur le bouton ci-dessous</p>
+        <p class="crp-paragraphe2">veuillez cliquer sur le bouton ci-dessous</p>
         <button class="button" onclick="getLocation()">Votre position</button>
-        <p id="demo"></p>
+        <p id="affichage"></p>
       </div>
     </div>
   </div>
