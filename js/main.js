@@ -11,6 +11,11 @@ function showPosition(position) {
   var x = document.getElementById("affichage");
   x.innerHTML = "Latitude: <br>" + position.coords.latitude +
     "<br><br>Longitude: <br>" + position.coords.longitude;
+  localStorage.setItem('Latitude', position.coords.latitude);
+  localStorage.setItem('Longitude', position.coords.longitude);
+  var historique = localStorage.getItem('Latitude') + localStorage.getItem('Longitude')
+  document.getElementById('historique').innerHTML = historique;
+
 }
 
 function showError(error) {

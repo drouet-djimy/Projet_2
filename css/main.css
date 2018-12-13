@@ -50,6 +50,10 @@ body .container .containerRight .cr-position {
           align-items: center;
 }
 
+body .container .containerRight .cr-position h1 {
+  text-align: center;
+}
+
 body .container .containerRight .cr-position .crp-paragraphe1 {
   text-align: center;
   margin: 0;
