@@ -9,7 +9,7 @@ body {
         .containerLeft {
             width: 80%;
             height: 100%;
-            iframe {
+            #mapid {
                 width: 100%;
                 height: 99%;
                 border: 0;
@@ -42,6 +42,7 @@ body {
                     border: none;
                     border-radius: 15px;
                     padding: 10px 5px;
+                    transition: width 2s;
                 }
                 #affichage {
                     text-align: center;

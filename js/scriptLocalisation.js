@@ -1,3 +1,9 @@
+// var id = 0;
+// var coords = {
+//   lat: 0,
+//   long: 0
+// }
+
 function getLocation() {
   var x = document.getElementById("affichage");
   if (navigator.geolocation) {
@@ -11,6 +17,14 @@ function showPosition(position) {
   var x = document.getElementById("affichage");
   x.innerHTML = "Latitude: <br>" + position.coords.latitude +
     "<br><br>Longitude: <br>" + position.coords.longitude;
+
+  mymap.setView([position.coords.latitude, position.coords.longitude], 16)
+
+  L.marker([position.coords.latitude, position.coords.longitude]).addTo(mymap)
+    .bindPopup("<b>Bienvenue !</b><br />Vous êtes ici !.").openPopup();
+  // coords.lat = position.coords.latitude;
+  // var data = JSON.parse(coords);
+  // id++;
   localStorage.setItem('Latitude', position.coords.latitude);
   localStorage.setItem('Longitude', position.coords.longitude);
   var historique = localStorage.getItem('Latitude') + localStorage.getItem('Longitude')
