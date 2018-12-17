@@ -14,9 +14,10 @@ function getLocation() {
 }
 
 function showPosition(position) {
-  var x = document.getElementById("affichage");
-  x.innerHTML = "Latitude: <br>" + position.coords.latitude +
-    "<br><br>Longitude: <br>" + position.coords.longitude;
+  var x = document.getElementById("affichageLatitude");
+  var y = document.getElementById("affichageLongitude");
+  x.innerHTML = position.coords.latitude;
+  y.innerHTML = position.coords.longitude;
 
   mymap.setView([position.coords.latitude, position.coords.longitude], 16)
 

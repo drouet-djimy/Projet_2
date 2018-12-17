@@ -74,7 +74,30 @@ body .container .containerRight .cr-position .button {
   transition: width 2s;
 }
 
-body .container .containerRight .cr-position #affichage {
-  text-align: center;
-  margin-top: 50px;
+body .container .containerRight .cr-position .container-alt {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .container .containerRight .cr-position .container-alt h2 {
+  font-size: 20px;
+}
+
+body .container .containerRight .cr-position .container-long {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .container .containerRight .cr-position .container-long h2 {
+  font-size: 20px;
 }

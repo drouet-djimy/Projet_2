@@ -13,7 +13,7 @@ var popup = L.popup();
 function onMapClick(e) {
     popup
         .setLatLng(e.latlng)
-        .setContent("La position de votre clique est " + e.latlng.toString())
+        .setContent("La position de votre clic est " + e.latlng.toString())
         .openOn(mymap);
 }
 

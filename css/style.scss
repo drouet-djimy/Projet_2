@@ -44,9 +44,23 @@ body {
                     padding: 10px 5px;
                     transition: width 2s;
                 }
-                #affichage {
-                    text-align: center;
-                    margin-top: 50px;
+                .container-alt {
+                    width: 90%;
+                    display: flex;
+                    justify-content: space-between;
+                    h2 {
+                        font-size: 20px;
+                    }
+                    #affichageLatitude {}
+                }
+                .container-long {
+                    width: 90%;
+                    display: flex;
+                    justify-content: space-between;
+                    h2 {
+                        font-size: 20px;
+                    }
+                    #affichageLongitude {}
                 }
             }
         }
