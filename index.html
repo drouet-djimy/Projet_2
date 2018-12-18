@@ -27,7 +27,7 @@
         <div class="position-haut-gauche">
           <h1>Site de Géolocalisation</h1>
           <p class="phg-paragraphe1">Pour connaitre votre position :</p>
-          <p class="phg-paragraphe2">veuillez cliquer sur le bouton ci-dessous</p>
+          <p class="phg-paragraphe2">veuillez cliquer sur le bouton "Votre position"</p>
         </div>
         <div class="position-haut-droite">
           <button class="button" onclick="getLocation()">Votre position</button>
@@ -48,7 +48,8 @@
 
       <div class="historique">
         <h2>Historique</h2>
-        <p id="historique"></p>
+        <div id="historiqueLatitude"></div>
+        <div id="historiqueLongitude"></div>
       </div>
 
     </div>
@@ -58,7 +59,7 @@
 
   <script src="js/maps.js"></script>
   <script src="js/scriptLocalisation.js"></script>
-
+  <script src="js/historique.js"></script>
 
 </body>
 

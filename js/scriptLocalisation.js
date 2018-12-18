@@ -1,8 +1,5 @@
-// var id = 0;
-// var coords = {
-//   lat: 0,
-//   long: 0
-// }
+var id = 0;
+localStorage.clear();
 
 function getLocation() {
   var x = document.getElementById("affichage");
@@ -23,14 +20,17 @@ function showPosition(position) {
 
   L.marker([position.coords.latitude, position.coords.longitude]).addTo(mymap)
     .bindPopup("<b>Bienvenue !</b><br />Vous êtes ici !.").openPopup();
-  // coords.lat = position.coords.latitude;
-  // var data = JSON.parse(coords);
-  // id++;
-  localStorage.setItem('Latitude', position.coords.latitude);
-  localStorage.setItem('Longitude', position.coords.longitude);
-  var historique = localStorage.getItem('Latitude') + localStorage.getItem('Longitude')
-  document.getElementById('historique').innerHTML = historique;
 
+  var coords = {
+    lat: position.coords.latitude,
+    long: position.coords.longitude,
+  };
+  id++;
+  localStorage.setItem(id, JSON.stringify(coords));
+
+  var historique = JSON.parse(localStorage.getItem(id));
+  document.getElementById("historiqueLatitude").innerHTML = historique.lat;
+  document.getElementById("historiqueLongitude").innerHTML = historique.long;
 }
 
 function showError(error) {
