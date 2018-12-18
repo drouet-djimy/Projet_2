@@ -19,7 +19,7 @@ function showPosition(position) {
   mymap.setView([position.coords.latitude, position.coords.longitude], 16)
 
   L.marker([position.coords.latitude, position.coords.longitude]).addTo(mymap)
-    .bindPopup("<b>Bienvenue !</b><br />Vous êtes ici !.").openPopup();
+    .bindPopup("<b>Vous êtes ici !</b>").openPopup();
 
   var coords = {
     lat: position.coords.latitude,
