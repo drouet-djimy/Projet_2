@@ -37,10 +37,10 @@ function showError(error) {
   var x = document.getElementById("affichage");
   switch (error.code) {
     case error.PERMISSION_DENIED:
-      x.innerHTML = "Vous avez refusé la demande de géolocalisation. <br>Veillez activer votre géolocalisation."
+      x.innerHTML = "Vous avez refusé la demande de géolocalisation. <br>Veillez activer votre géolocalisation pour continuer."
       break;
     case error.POSITION_UNAVAILABLE:
-      x.innerHTML = "La localisation est indisponibles."
+      x.innerHTML = "La localisation est indisponible."
       break;
     case error.TIMEOUT:
       x.innerHTML = "Votre demande d'emplacement a expiré."

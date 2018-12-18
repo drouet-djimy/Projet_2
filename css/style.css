@@ -63,9 +63,14 @@
     width: 100%;
     background-color: #aadaff;
     border: none;
-    border-radius: 15px;
+    border-radius: 20px;
     padding: 10px 5px;
     margin-top: 25px;
+  }
+  body .container .containerRight .position-haut .position-haut-droite .button:hover {
+    background-color: #fff;
+    border: 4px solid #aadaff;
+    color: #aadaff;
   }
   body .container .containerRight .position-haut .position-haut-droite #affichage {
     text-align: center;
