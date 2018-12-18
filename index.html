@@ -16,17 +16,26 @@
 
 <body>
 
+
   <div class="container">
     <div class="containerLeft">
       <div id="mapid"></div>
     </div>
 
     <div class="containerRight">
-      <div class="cr-position">
-        <h1>Site de Géolocalisation</h1>
-        <p class="crp-paragraphe1">Pour connaitre votre position :</p>
-        <p class="crp-paragraphe2">veuillez cliquer sur le bouton ci-dessous</p>
-        <button class="button" onclick="getLocation()">Votre position</button>
+      <div class="position-haut">
+        <div class="position-haut-gauche">
+          <h1>Site de Géolocalisation</h1>
+          <p class="phg-paragraphe1">Pour connaitre votre position :</p>
+          <p class="phg-paragraphe2">veuillez cliquer sur le bouton ci-dessous</p>
+        </div>
+        <div class="position-haut-droite">
+          <button class="button" onclick="getLocation()">Votre position</button>
+          <div id="affichage"></div>
+        </div>
+      </div>
+
+      <div class="position-bas">
         <div class="container-alt">
           <h2>Altitude :</h2>
           <p id="affichageLatitude"></p>
@@ -35,13 +44,22 @@
           <h2>Longitude :</h2>
           <p id="affichageLongitude"></p>
         </div>
+      </div>
+
+      <div class="historique">
         <h2>Historique</h2>
         <p id="historique"></p>
       </div>
+
     </div>
+
   </div>
+
+
   <script src="js/maps.js"></script>
   <script src="js/scriptLocalisation.js"></script>
+
+
 </body>
 
 </html>
